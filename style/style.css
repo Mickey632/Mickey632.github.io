@@ -52,7 +52,7 @@ a:hover {
   text-align: center;
 }
 
-@media (max-width: 500px) and (orientation: portrait) {
+@media (min-width: 300px), (max-width: 500px) and (orientation: portrait) {
   .about {
     font-size: 15px;
   }
@@ -62,7 +62,7 @@ a:hover {
   }
 }
 
-@media (min-width: 500px) and (orientation: landscape) {
+@media (min-width: 500px), (max-width: 1000px) and (orientation: landscape) {
   .about {
     font-size: 18px;
   }
