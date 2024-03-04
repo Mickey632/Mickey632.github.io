@@ -4,16 +4,10 @@
 }
 
 body {
-  background-color: rgb(238,238,228);
-  color: rgb(35,20,15);
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  background-color: rgb(238, 238, 228);
+  color: rgb(35, 20, 15);
+  font-family: Helvetica, sans-serif;
   text-align: center;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 ul {
@@ -25,26 +19,56 @@ li {
 }
 
 img {
-  margin: 20px 0;
+  max-width: 100%;
+  margin-top: 20px;
   vertical-align: bottom;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 250, 250);
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .about {
-  max-width: 1000px;
-  margin: 0 auto;
   padding: 50px 0;
 }
 
 .about-me {
+  max-width: 750px;
   text-align: left;
 }
 
 .about-me h3 {
-  margin: 25px 0;
+  margin: 20px 0;
   text-align: center;
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+  .about {
+    font-size: 15px;
+  }
+
+  .about-me {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 500px) and (orientation: landscape) {
+  .about {
+    font-size: 18px;
+  }
+
+  .about-me {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 }
